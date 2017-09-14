@@ -14,9 +14,7 @@ Summary: Extracts emails and attachments saved in Microsoft Outlook's .msg files
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/msg-extractor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/msg-extractor-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/msg-extractor-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/msg-extractor-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/msg-extractor-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/msg-extractor-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/msg-extractor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/msg-extractor-feedstock)
 
 Current release info
 ====================
