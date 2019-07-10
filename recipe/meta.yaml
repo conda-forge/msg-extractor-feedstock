@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/e/extract-msg/extract_msg-{{ version }}.tar.gz"
-  sha256: "8842fd250c0ee0534ce7de86aa3d883685189191ea5fcd9886ae8a9e10b5611c"
+  sha256: "3746d5f68266740575ef9097516f39c5f601fa031e188cea338a13b66de16ada"
 
 build:
   #noarch: python
