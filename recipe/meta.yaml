@@ -1,40 +1,45 @@
-{%set name = "msg-extractor" %}
-{%set version = "0.22" %}
-{%set build_num = "0" %}
+{% set name = "msg-extractor" %}
+{% set version = "0.23.1" %}
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
 
 source:
-  git_url: https://github.com/mattgwwalker/{{ name }}.git
-  git_rev: v{{ version }}
+  url: "https://pypi.io/packages/source/e/extract-msg/extract_msg-{{ version }}.tar.gz"
+  sha256: "3746d5f68266740575ef9097516f39c5f601fa031e188cea338a13b66de16ada"
 
 build:
-  number: {{ build_num }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  skip: True  # [win and py>35]
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
-  build:
-    - python
-    - setuptools
-  run:
-    - python
+  host:
     - imapclient
     - olefile
+    - pip
+    - python
+    - tzlocal
+  run:
+    - imapclient
+    - olefile
+    - python
+    - tzlocal
 
 test:
   imports:
-    - ExtractMsg
+    - extract_msg
 
 about:
   home: https://github.com/mattgwwalker/msg-extractor
   license: GPL 3.0
-  license_file: LICENSE.txt
   license_family: GPL3
+  license_file: LICENSE.txt
   summary: "Extracts emails and attachments saved in Microsoft Outlook's .msg files"
   dev_url: https://github.com/mattgwwalker/msg-extractor
 
 extra:
   recipe-maintainers:
+    - agcopenhaver
     - pmlandwehr
