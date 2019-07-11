@@ -3,7 +3,7 @@ About msg-extractor
 
 Home: https://github.com/mattgwwalker/msg-extractor
 
-Package license: GPL
+Package license: GPL 3.0
 
 Feedstock license: BSD 3-Clause
 
