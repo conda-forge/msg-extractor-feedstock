@@ -32,13 +32,12 @@ test:
     - extract_msg
 
 about:
-  home: "https://github.com/mattgwwalker/msg-extractor"
-  license: "GPL"
-  license_family: "GPL"
-  license_file: ""
+  home: https://github.com/mattgwwalker/msg-extractor
+  license: GPL 3.0
+  license_family: GPL3
+  license_file: LICENSE.txt
   summary: "Extracts emails and attachments saved in Microsoft Outlook's .msg files"
-  doc_url: ""
-  dev_url: ""
+  dev_url: https://github.com/mattgwwalker/msg-extractor
 
 extra:
   recipe-maintainers:
