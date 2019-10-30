@@ -1,5 +1,5 @@
 {% set name = "msg-extractor" %}
-{% set version = "0.23.2" %}
+{% set version = "0.23.3" %}
 
 package:
   name: "{{ name|lower }}"
