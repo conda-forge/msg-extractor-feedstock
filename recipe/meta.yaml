@@ -1,5 +1,5 @@
 {% set name = "msg-extractor" %}
-{% set version = "0.24.4" %}
+{% set version = "0.25.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/extract-msg/extract_msg-{{ version }}.tar.gz
-  sha256: 8f8cdf3288373a70bdfc85ef8d47598c54e4a753740b4ae0df5a6cbf78fc6f2b
+  sha256: fcfd4dc78b98a821ec3de4f85fc2d1f3a2ef2a77f3d2eb38c9148e830abaa1ba
 
 build:
   number: 0
@@ -37,7 +37,7 @@ about:
   license: GPL 3.0
   license_family: GPL3
   license_file: LICENSE.txt
-  summary: "Extracts emails and attachments saved in Microsoft Outlook's .msg files"
+  summary: Extracts emails and attachments saved in Microsoft Outlook's .msg files
   dev_url: https://github.com/mattgwwalker/msg-extractor
 
 extra:
