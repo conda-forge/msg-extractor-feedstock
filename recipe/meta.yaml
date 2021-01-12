@@ -1,5 +1,5 @@
 {% set name = "msg-extractor" %}
-{% set version = "0.28.0" %}
+{% set version = "0.28.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/extract-msg/extract_msg-{{ version }}.tar.gz
-  sha256: 72eace1f0c2dd772f3fd6745f736d5681eb7ee3e9d8102a56520bb2d6e9d3bfb
+  sha256: 7300a50bfa91405a381826f8e22f39458c7322fea1cd660ef699c4157a58be4b
 
 build:
   number: 0
