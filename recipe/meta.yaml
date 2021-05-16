@@ -19,12 +19,12 @@ requirements:
     - imapclient
     - olefile
     - pip
-    - python
+    - python >=3.6
     - tzlocal
   run:
     - imapclient
     - olefile
-    - python
+    - python >=3.6
     - tzlocal
     - compressed-rtf
 
