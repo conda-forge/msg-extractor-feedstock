@@ -16,16 +16,14 @@ build:
 
 requirements:
   host:
-    - imapclient
-    - olefile
     - pip
     - python >=3.6
-    - tzlocal
   run:
     - imapclient
     - olefile
     - python >=3.6
     - tzlocal
+    - ebcdic
     - compressed-rtf
 
 test:
