@@ -1,5 +1,5 @@
 {% set name = "msg-extractor" %}
-{% set version = "0.28.0" %}
+{% set version = "0.28.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,25 +7,23 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/extract-msg/extract_msg-{{ version }}.tar.gz
-  sha256: 72eace1f0c2dd772f3fd6745f736d5681eb7ee3e9d8102a56520bb2d6e9d3bfb
+  sha256: 044d1fbafd706e09aa9e0d8de351791c5517a171bc09e2391728508013793f28
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
-    - imapclient
-    - olefile
     - pip
-    - python
-    - tzlocal
+    - python >=3.6
   run:
     - imapclient
     - olefile
-    - python
+    - python >=3.6
     - tzlocal
+    - ebcdic
     - compressed-rtf
 
 test:
@@ -47,3 +45,4 @@ extra:
     - pmlandwehr
     - rluria14
     - oblute
+    - jan-janssen
