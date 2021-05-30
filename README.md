@@ -121,6 +121,5 @@ Feedstock Maintainers
 * [@jan-janssen](https://github.com/jan-janssen/)
 * [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@rluria14](https://github.com/rluria14/)
 

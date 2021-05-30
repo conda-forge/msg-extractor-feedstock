@@ -10,7 +10,7 @@ source:
   sha256: 7ebdbd7863a3699080a69f71ec0cd30ed9bfee70bad9acc6a8e6abe9523c78c0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -42,7 +42,6 @@ extra:
   recipe-maintainers:
     - mxr-conda
     - agcopenhaver
-    - pmlandwehr
     - rluria14
     - oblute
     - jan-janssen
