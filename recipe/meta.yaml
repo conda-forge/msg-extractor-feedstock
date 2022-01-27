@@ -25,6 +25,7 @@ requirements:
     - tzlocal
     - ebcdic
     - compressed-rtf
+    - beautifulsoup4
 
 test:
   imports:
