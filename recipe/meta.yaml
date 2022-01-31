@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - imapclient
+    - imapclient =2.1.0
     - olefile
     - python >=3.6
     - tzlocal
