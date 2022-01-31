@@ -26,6 +26,7 @@ requirements:
     - ebcdic
     - compressed-rtf
     - beautifulsoup4
+    - rtfde
 
 test:
   imports:
