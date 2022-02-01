@@ -21,6 +21,7 @@ requirements:
   run:
     - imapclient =2.1.0
     - olefile
+    - oletools >=0.60=*_2  # only to fix the dependencies
     - python >=3.6
     - tzlocal
     - ebcdic
