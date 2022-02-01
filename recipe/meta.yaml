@@ -19,8 +19,9 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - imapclient
+    - imapclient =2.1.0
     - olefile
+    - oletools >=0.60=*_2  # only to fix the dependencies
     - python >=3.6
     - tzlocal
     - ebcdic
@@ -31,6 +32,10 @@ requirements:
 test:
   imports:
     - extract_msg
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/mattgwwalker/msg-extractor
