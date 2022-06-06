@@ -1,5 +1,5 @@
 {% set name = "msg-extractor" %}
-{% set version = "0.30.14" %}
+{% set version = "0.31.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/extract-msg/extract_msg-{{ version }}.tar.gz
-  sha256: 115586ad6f4b9f022f1c487b7e08572e82edae8c75edae4a619c11d1730e08c3
+  sha256: 3a14ad50dda9b477a301a84c4b41edc403e745dcc56f0e9ca143acafb46a4614
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - compressed-rtf
     - beautifulsoup4
     - rtfde
+    - mailbits
 
 test:
   imports:
