@@ -29,6 +29,7 @@ requirements:
     - beautifulsoup4
     - rtfde
     - mailbits
+    - chardet
 
 test:
   imports:
