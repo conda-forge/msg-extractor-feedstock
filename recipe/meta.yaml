@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - imapclient =2.1.0
+    - imapclient >=2.3.0<3
     - olefile
     - oletools >=0.60=*_2  # only to fix the dependencies
     - python >=3.6
@@ -30,6 +30,7 @@ requirements:
     - rtfde
     - mailbits
     - chardet
+    - red-black-tree-mod
 
 test:
   imports:
