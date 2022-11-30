@@ -1,5 +1,5 @@
 {% set name = "msg-extractor" %}
-{% set version = "0.37.1" %}
+{% set version = "0.38.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/extract-msg/extract_msg-{{ version }}.tar.gz
-  sha256: 3ec88641d799065daebc02076cc17fdc381f79baf6e90994effd01523727bc7c
+  sha256: 1f9e245177d3e288ff962cf3d75adb0ada26444922533ef57943ab9240779123
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - imapclient =2.1.0
+    - imapclient >=2.3.0,<3
     - olefile
     - oletools >=0.60=*_2  # only to fix the dependencies
     - python >=3.6
@@ -30,6 +30,7 @@ requirements:
     - rtfde
     - mailbits
     - chardet
+    - red-black-tree-mod
 
 test:
   imports:
