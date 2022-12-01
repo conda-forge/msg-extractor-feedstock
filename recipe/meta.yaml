@@ -1,5 +1,5 @@
 {% set name = "msg-extractor" %}
-{% set version = "0.38.0" %}
+{% set version = "0.38.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/extract-msg/extract_msg-{{ version }}.tar.gz
-  sha256: 1f9e245177d3e288ff962cf3d75adb0ada26444922533ef57943ab9240779123
+  sha256: a1072f30911c7aead3ce2c59c8db1d417b9eaf60ce5cc628149b57a88842a7f3
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - rtfde
     - mailbits
     - chardet
-    - red-black-tree-mod
+    - red-black-tree-mod =1.20
 
 test:
   imports:
