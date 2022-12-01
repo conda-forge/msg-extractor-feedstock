@@ -30,7 +30,7 @@ requirements:
     - rtfde
     - mailbits
     - chardet
-    - red-black-tree-mod
+    - red-black-tree-mod =1.20
 
 test:
   imports:
