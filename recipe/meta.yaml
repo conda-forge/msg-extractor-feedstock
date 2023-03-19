@@ -23,7 +23,7 @@ requirements:
     - olefile
     - oletools >=0.60=*_2  # only to fix the dependencies
     - python >=3.6
-    - tzlocal
+    - tzlocal =4.2
     - ebcdic
     - compressed-rtf
     - beautifulsoup4
