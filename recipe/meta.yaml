@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
   run:
     - imapclient >=2.3.0,<3
     - olefile
