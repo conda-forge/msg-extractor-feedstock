@@ -10,27 +10,24 @@ source:
   sha256: c21c548c43e1f0cdce5616102d33e590e2b46fbdc9d04f21af4eb62dcbf296dd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - imapclient >=2.3.0,<3
     - olefile
     - oletools >=0.60=*_2  # only to fix the dependencies
-    - python >=3.6
-    - tzlocal =4.2
-    - ebcdic
-    - compressed-rtf
-    - beautifulsoup4
-    - rtfde
-    - mailbits
-    - chardet
+    - python >={{ python_min }}
+    - tzlocal >=4.2,<6
+    - compressed-rtf >=1.0.6,<2
+    - ebcdic >=1.1.1,<2
+    - beautifulsoup4 >=4.11.1,<4.13
+    - rtfde >=0.1.1,<0.2
     - red-black-tree-mod =1.20
 
 test:
@@ -40,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/mattgwwalker/msg-extractor
