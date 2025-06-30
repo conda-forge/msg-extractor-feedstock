@@ -20,8 +20,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - olefile
-    - oletools >=0.60=*_2  # only to fix the dependencies
+    - olefile =0.47
     - python >={{ python_min }}
     - tzlocal >=4.2,<6
     - compressed-rtf >=1.0.6,<2
