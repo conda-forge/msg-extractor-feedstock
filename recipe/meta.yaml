@@ -10,7 +10,7 @@ source:
   sha256: 378d57487fbb9c2f0f4559b9713f8158744cd0c7e76baec1bcc021c9f3b04c27
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -25,7 +25,7 @@ requirements:
     - tzlocal >=4.2,<6
     - compressed-rtf >=1.0.6,<2
     - ebcdic >=1.1.1,<2
-    - beautifulsoup4 >=4.11.1,<4.13
+    - beautifulsoup4 >=4.11.1,<5
     - rtfde >=0.1.1,<0.2
     - red-black-tree-mod =1.20
 
