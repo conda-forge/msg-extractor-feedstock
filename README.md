@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/msg-extractor-f
 
 Home: https://github.com/mattgwwalker/msg-extractor
 
-Package license: GPL 3.0
+Package license: GPL-3.0-only
 
 Summary: Extracts emails and attachments saved in Microsoft Outlook's .msg files
 
