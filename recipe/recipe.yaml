@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: msg-extractor
-  version: "0.56.1"
+  version: "0.57.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/e/extract-msg/extract_msg-${{ version }}.tar.gz
-  sha256: de94121cf5503377d932d503280293837baf630cd51ce36de901936b3172c43a
+  sha256: 5768fdf8035b5f67f0f1d2959668eb0577a4239ea5f2044315ef74645cb39236
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -31,6 +31,11 @@ requirements:
     - beautifulsoup4 >=4.11.1,<5
     - rtfde >=0.1.1,<0.2
     - red-black-tree-mod =1.20
+    - colorclass
+    - easygui
+    - msoffcrypto-tool
+    - pcodedmp
+    - pyparsing >=2.1.0,<3
 
 tests:
   - python:
