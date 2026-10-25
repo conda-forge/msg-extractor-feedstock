@@ -31,6 +31,11 @@ requirements:
     - beautifulsoup4 >=4.11.1,<5
     - rtfde >=0.1.1,<0.2
     - red-black-tree-mod =1.20
+    - colorclass
+    - easygui
+    - msoffcrypto-tool
+    - pcodedmp
+    - pyparsing
 
 tests:
   - python:
