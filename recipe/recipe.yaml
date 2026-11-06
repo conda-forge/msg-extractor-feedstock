@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: msg-extractor
-  version: "0.58.1"
+  version: "0.58.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/e/extract-msg/extract_msg-${{ version }}.tar.gz
-  sha256: ff92bde1b226732854869191c20920ccb4054db738c8a93d9e6d26e66253ed93
+  sha256: 83bc225a0942d80fd97a445c0724e6472b3d821b59df1a5634421bbd19e265fa
 
 build:
   number: 0
